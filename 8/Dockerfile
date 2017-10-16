@@ -1,4 +1,4 @@
-FROM jruby:9.1.9.0
+FROM jruby:9.1.13.0
 
 # Change packages source to cloudfront
 RUN sed 's@deb.debian.org@cloudfront.debian.net@' -i /etc/apt/sources.list
