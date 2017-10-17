@@ -16,7 +16,7 @@ RUN curl -sL https://deb.nodesource.com/setup_6.x | bash -
 RUN apt-get install -y nodejs
 
 RUN apt-get dist-upgrade -y
-RUN apt-get install ImageMagick -y
+RUN apt-get install imagemagick -y
 RUN apt-get install libicu-dev -y
 RUN apt-get install netcat -y
 
