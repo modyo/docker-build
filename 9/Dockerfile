@@ -6,6 +6,7 @@ RUN curl -sL https://deb.nodesource.com/setup_10.x | bash -
 
 RUN apt-get install -y build-essential \
     nodejs \
+    python-pip \
     zip
 
 ENV GEM_HOME vendor/gem_home
@@ -19,3 +20,4 @@ RUN bundle config BUNDLE_BIN bin
 RUN bundle config BUNDLE_DISABLE_SHARED_GEMS true
 
 RUN npm install -g yarn
+RUN pip install awscli
